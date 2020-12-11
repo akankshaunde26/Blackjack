@@ -1,0 +1,118 @@
+body{
+    text-align: center;
+    font-family: 'Texturina', serif;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH0-dsN2QXB1lBW2-cXomxkrCEzp4HdKU4kQ&usqp=CAU) repeat;
+}
+
+h1 { 
+    font-weight: 900;
+    outline-style:  5px solid black;
+    font-size: 4rem;
+    color: #FDEC2F;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+
+button {
+    display: block;
+    margin-top: 15px;
+    font-family: 'Texturina', serif;
+    font-weight: 700;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    height:60px;
+    width:60px;
+    box-shadow: 0 0 10px 5px;
+    background-image: linear-gradient(180deg, rgba(214, 63, 63, 0.685), rgb(223, 10, 10));
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+img {
+    width : 50px;
+    height: 65px;
+    padding: 5px;
+}
+
+.container {
+    margin: auto;
+    width: 60%;
+    height: 400px;
+    background-image: url("https://image.freepik.com/free-vector/poker-table-background-green-color_47243-1068.jpg");
+    color: aliceblue;
+}
+
+.flex-box-1 {
+    display:flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.flex-box-3{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-box-2 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+#your-card-images, #dealer-card-images {
+    width: 250px;
+}
+
+#bet {
+    padding-left: 40px;
+}
+
+
+
+/* FOR RESPONSE ON SMALLER SCREEN */
+
+@media (max-width: 980.8px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        height : 550px;
+        margin-top: 0;
+    }
+
+    .flex-box-1{
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .flex-box-3 {
+        flex-direction: row;
+        justify-content: center;
+        width: 400px;
+    }
+
+    button {
+        margin-left: 20px;
+    }
+
+    #your-card-images, #dealer-card-images {
+        height: 170px;
+        width: 100%;
+    }
+
+    .h2clr {
+        background-color: darkgoldenrod;
+        border: 3px solid  black;
+    }
+}
